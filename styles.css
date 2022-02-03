@@ -1,0 +1,35 @@
+.title{
+	font-family: DIN, "DIN Medium";
+	color: #ff6633;
+}
+
+.btn{
+	padding: 15px 25px;
+  	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+ 	color: #fff;
+	background-color: #04AA6D;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.btn:hover {
+	background-color: #3e8e41
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.flex-container{
+	display: flex;
+	height: 80vh; /*https://css-tricks.com/fun-viewport-units/*/
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
