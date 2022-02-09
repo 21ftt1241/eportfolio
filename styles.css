@@ -29,8 +29,8 @@
 
 .flex-container{
 	display: flex;
-	height: 80vh; /*https://css-tricks.com/fun-viewport-units/*/
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	column-gap: 15px;
+
 }
