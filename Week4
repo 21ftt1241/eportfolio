@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form method="" action="">
+		<!-- <input type="Text" name="postcode" placeholder="BG1221" pattern="[A-z]{2}\d{4}"> "\d" is 0-9 -->
+		<!-- <input type="Text" name="postcode" placeholder="" pattern="[A-z0-9]{4,8}"> -->
+		<!-- 	<input type="Text" name="postcode" placeholder="" pattern="\w{4,}">-->
+		<!-- <input type="Text" name="ic" placeholder="ic" pattern="[01]{2}-[0-9]{6}\((Y|R|G)\)"> -->
+		<!-- <input type="Text" name="any" placeholder="any" pattern=".{6}"> -->
+
+		<input type="Text" name="any" placeholder="Landline" pattern="[2-5]{1}[0-9]{6}">
+		<br>
+		<input type="Text" name="any" placeholder="StudentID" pattern="[2]{1}[1-9]{1}(FT|PT)([B|T||E|H|P)[0-9]{4}">
+
+
+		<br>
+		<input type="Submit" name="" value="Submit">
+		<input type="Reset" name="" value="Clear All">
+	</form>
+
+</body>
+</html>
