@@ -1,5 +1,5 @@
 .title{
-	font-size: 20px;
+	font-size: 25px;
 	display: block;
 	margin-top: 10%;
 	margin-left: auto;
@@ -7,37 +7,48 @@
 	text-align: center;
 	font-weight: 650;
 	font-family: DIN, "DIN Bold";
-	color: #ff6633;
+	color: #ffffff;
 }
 
 .btnarea{
 	padding-top: 20px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.btn{
-	padding: 15px 25px;
-  font-size: 24px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
+}
+
+a{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	display: block;
+
+}
+.btn{
 	cursor: pointer;
-	outline: none;
- 	color: #fff;
-	background-color: #04AA6D;
 	border: none;
-	border-radius: 15px;
-	box-shadow: 0 9px #999;
+	background-color: #F77F00;
+	width: 70%;
+	padding: 8px;
+	font-family: DIN;
+	font-size: 20px;
+	font-weight: 550;
+	color: #FFFFFF;
+	position: relative;
+	z-index: 2;
 }
-
-.btn:hover {
-	background-color: #3e8e41
+/*.btn:after{
+	position: absolute;
+	content: "";
+	top: 0; left: 0; width: 0; height: 100%;
+	background: #FCBF49;
+	transition: all .4s;
+}*/
+.btn:hover{
+	background-color: #FCBF49;
 }
-
-.btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
+/*.btn:hover:after{
+	width: 100%;
+}*/
