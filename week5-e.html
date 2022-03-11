@@ -78,12 +78,14 @@
 			border: 1px solid;
 			border-radius: 50px;
 			font-size: 1em;
-			text-align: center;}
+			t/*ext-align: center;*/}
 
 		.rounded.cn{
 			padding-top: 80px;
+			padding-bottom: 20px;
 			padding-left: 30px;
 			padding-right: 30px;
+			/*padding: 80px 30px;*/
 			background-image: url(assets/images/id/dancing.gif);
 			background-size: 100px 80px;
 			background-repeat: repeat-x;
@@ -91,8 +93,9 @@
 			font-family: Courier New;}
 
         /*DESCENDENT SELECTOR*/
-        .rounded > p{
+        div.rounded > p{
             color: skyblue;
+            font-weight: bold;
             padding: 0 30px;}
 
         div > p > span{
@@ -106,7 +109,7 @@
         /*ATTRIBUTE SELECTOR
         - matches the element based on the specified attribute
 		(eg. [class="cn"]{****} or img[src*="gif"] )*/		
-		[class="rounded"]{
+		div[class="rounded"]{
 			padding: 20px 30px;}
 
 		img[src*="gif"]{
