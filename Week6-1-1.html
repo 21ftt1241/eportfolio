@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*id element or class*/
+		.p1{font-size: 2em; color: darkcyan;}
+
+		img{width: 300px; height: 200px;}
+
+		/*"[]" means an attribute selector*/
+		img[src^="assets/images/my/"]{border: 3px solid turquoise;}
+		/*using element selector in css*/
+
+		input[class]{width: 200px; display: block;}
+		/*Apply the attribute to an element with a class*/
+
+		input[type="text"],h3{font-family: 'Courier New';}
+		/*Apply the css attribute to an element with type "text"*/
+
+		div,h3,.border{border: 1px solid;}
+		/*for h3 element and border class*/
+
+		input[class~="border"]{border-color: navy;}
+		/*for every input element with the class border, the border color will be navy*/
+
+		li:nth-child(even){font-style: italic;}
+		/*change the attribute of an element every nth number of child which n are defined as even in this case, can be either "odd" "3n" or "2n+1" check google for more info*/
+
+		.listcolor{color: darkcyan;}
+
+
+		div{width: 150px; height: 100px;}
+		/*div#d2{display: none;}*/
+		/*div#d2{visibility: hidden;}*/
+/*		div#d1{padding: 10px; box-sizing: content-box;}
+		div#d3{margin-left: 10px;}*/
+	</style>
+</head>
+<body>
+
+	<p class="p1">Here is my favorite pictures</p> <!-- 2em darkcyan -->
+		<!-- images 300x200 -->
+		<img src="assets/images/th/t-1.jpg" alt="">
+		<img src="assets/images/my/m-1.jpg" alt=""> <!-- 3px solid turquoise -->
+		<img src="assets/images/my/m-2.jpg" alt=""> <!-- 3px solid turquoise -->
+		<img src="assets/images/th/t-2.jpg" alt="">
+
+	<p>Just a form</p>
+
+	<form action="">
+		<!-- for each input in this form courier new, w 200px, border 1px solid, border color navy -->
+		<input type="text" placeholder="name" name="fullname" class="border">
+		<input type="text" placeholder="fone" name="fone" class="border">
+		<input type="email" placeholder="email" name="email" class="border"> <!-- default font -->
+		<input type="number" name="captcha" placeholder="5x2" class="border"> <!-- default font -->
+		<input type="submit"> <!-- no design -->
+	</form>
+
+	<h3>here is list of my songs</h3>
+
+	<ol class="listcolor"> 
+	<!--all list will be darkcyan -->
+		<li>Dimana janji mu dulu</li>
+		<li>Insan ku sayang menghilang</li> <!-- italic -->
+		<li>Resah kerinduan</li>
+		<li>Mengusung rindu</li> <!-- italic -->
+		<li>Malam semakin dingin</li>
+		<li>Haruskah kita berpisah</li><!-- italic -->
+		<li>Salah apa aku</li>
+		<li>Salam terakhir</li><!-- italic -->
+	</ol>
+	
+	<p>Find the difference</p>
+	<div id="d1">Im a border div</div>
+	<div id="d2">Content Bx</div>
+	<div id="d3">The 3rd DIV</div>
+
+</body>
+</html>

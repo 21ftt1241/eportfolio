@@ -8,7 +8,6 @@
 <body>
 
 <form action="https://lms.pb.edu.bn/qwerty/displaypost.php" method="post" enctype="multipart/form-data">
-	<!--  -->
 	<!-- the enctype = "multipart/form-data" is used to define on how the data should be encoded when it is submitted and it is necessary for user if they upload a file through the form -->
 
 	<h3>Select the village</h3>
@@ -48,7 +47,8 @@
 	<!-- any character that is not a digit - equivalent to [^0-9] -->
 
 	<h3>Last but not least.. Enter a sentence, mininum 10 characters and maximum 30 characters. Allow: numbers, alphabet lowercase & uppercase, spaces and question mark</h3>
-	<input type="text" pattern="[A-z0-9\s?]{10,30}" name="wsdot-sample" size="30"><br> <!-- &#63; = '?' in html code, '\w' & '\s' = include both alphanumeric and whitespace-->
+	<input type="text" pattern="[A-z0-9\s?]{10,30}" name="wsdot-sample" size="30"><br> 
+	<!-- <'\s' = include whitespace or space-->
 
 	<!-- so what's hidden? write your finding in reflection -->
 	<input type="hidden" value="bwep2022">
