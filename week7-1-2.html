@@ -17,11 +17,18 @@ align-content
 •align-self -->
 	<style type="text/css">
 		
-		div{display: flex; border: 1px solid; 
-			width: 500px;height:400px;
-/*			flex-wrap: wrap;
-			align-content: center;
-			justify-content: center;*/
+		div{display: flex; 
+			border: 1px solid; 
+			width: 900px;
+			height:400px;
+			/*flex-wrap: wrap;*/
+			justify-content: space-around;
+			align-items: center;
+			/*align-content: flex-start;*/
+			/*align-content: center; */
+			/*^ it affects the flex line*/
+			/*flex-direction: row;*/
+			
 		}
 
 		p{width:200px;height: 100px; 
@@ -29,8 +36,8 @@ align-content
 			border: 1px solid;
 			box-sizing: border-box;}
 
-			p:nth-child(odd){align-self: flex-end;}
-			p:nth-child(even){align-self: center;}
+			p:nth-child(odd){align-self: flex-start;}
+			p:nth-child(even){align-self: flex-end;}
 
 	</style>
 
