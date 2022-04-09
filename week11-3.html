@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var maths = prompt("Credit in Maths? (Y/N)");
+		var eng = prompt("Credit in Eng? (Y/N)");
+		var malay = prompt("Credit in Malay? (Y/N)");
+		var yIC = prompt("Are you a yellow IC holder? (Y/N)");
+		var ems = prompt("3 credits in english medium subjects? (Y/N)");
+		var output;
+
+		if((maths=="Y") && eng=="Y" && ems=="Y"){
+			if(malay=="Y" && yIC =="Y"){
+				output = "Eligible to apply and receive full scholarship";
+			}else{
+				output = "Eligible to apply as fee paying student";
+			}
+		}else{
+			output = "Sorry, you are not eligible";
+		}
+
+		document.write("<p>" + output + "</p>");
+	</script>
+</body>
+</html>

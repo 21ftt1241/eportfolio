@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>week10-2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var x = 100;
+		// var y = 15;
+		// var z = "10";
+
+		// const disc = 0.1;
+		// console.log("x is "+x);
+		// console.log("x - y is "+(x-y));
+		// console.log("y + z is "+(y+z));
+		// displays on the console of the web browser
+		// usually used for error checking
+		// y=y-z;
+		// console.log("y is " + y);
+		// the variable string only affects operation for addition, multiplication and division not subtraction.
+
+		// var num = (x == z);
+		// var num = (x === z);
+		// "===" signifies strict comparison rule between variable
+		// console.log(num);
+
+		// if(x > y){
+		// 	console.log("x is greater than y");}
+		// else{
+		// 	console.log("y is greater than x");}
+
+		var name = prompt("Enter your name");
+		var gender = prompt("Enter gender");
+		var bYear = parseInt(prompt("Enter year of birth"));
+
+		var cYear = new Date();
+		cYear = cYear.getFullYear();
+		// get current system year
+
+		var age = cYear - bYear;
+
+		if((gender == "M") || (gender == "m")){
+			name = "Awang " + name;
+		}else if((gender == "F") || (gender == "f")){
+			name = "Dayang " + name;
+		}else{
+			document.write("<p>Invalid gender</p>");
+		}
+
+		document.write("<p>Hi " + name + ". This year you will be "+ age + " years old</p>");
+
+	</script>
+</body>
+</html>

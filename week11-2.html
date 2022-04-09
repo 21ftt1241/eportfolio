@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Logical Op</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var time = prompt("Enter the time");
+		var weather = prompt("Enter weather (sunny/raining)");
+		var output = "";
+
+		// if(time>=1 && time<=6){
+		// 	output = "Too early";
+		// }else if((time>=7 && time<=16) && weather == "sunny"){
+		// 	output = "play outside";
+		// }else if((time>=7 && time<=16) && weather == "raining"){
+		// 	output = "play inside";
+		// }else if((time>=17 && time<=21) && weather == "sunny"){
+		// 	output = "Cinema";
+		// }else if ((time>=17 && time<=21) && weather == "raining"){
+		// 	output = "home movie";
+		// }else if (time>=22 && time<=24){
+		// 	output = "bed time";
+		// }else{
+		// 	output = "invalid time";
+		// }
+
+		if(time>=1 && time<=6){
+			output = "Too early";
+		}else if(time>=7 && time<=16){
+			if(weather=="sunny"){
+				output = "play outside";
+			}else{
+				output = "play inside";
+			}
+		}else if(time>=17 && time<=21){
+			if(weather=="sunny"){
+				output = "cinema";
+			}else{
+				output = "home movie";
+			}
+		}else if (time>=22 && time<=24){
+			output = "bed time";
+		}else{
+			output = "invalid time";
+		}
+
+		document.write("<p>" + output + "</p>");
+	</script>
+</body>
+</html>
