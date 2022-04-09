@@ -29,11 +29,32 @@
       width: 90%;
       margin: 0 auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(4, 150px);
+      /*grid-template-rows: repeat(4, 150px);*/
     }
 
     .submain{
       display: grid;}
+
+    /*Author*/
+    .submain>div:nth-child(1){
+      background-color: lightseagreen;
+      display: grid;
+      grid-area: 2 / 1;
+      justify-content: center;
+      align-items: center;
+      grid-template-rows: 40px;
+      }
+
+     /*Quote*/
+    .submain>div:nth-child(2){
+      background-color: skyblue;
+      display: grid;
+      text-align: center;
+      align-items: center;
+      padding: 10px;
+      grid-template-rows: 110px;
+    }
+    }
 
     .spotlight:nth-child(1){
       grid-area: 1 / 2 / 1 / 5;}
@@ -47,31 +68,12 @@
     .spotlight:nth-child(8){
       grid-area: 4 / 2 / 4 / 5;}
 
-    /*Author*/
-    .submain>div:nth-child(1){
-      background-color: lightseagreen;
-      display: grid;
-      grid-area: 2 / 1;
-      justify-content: center;
-      align-items: center;}
-
-     /*Quote*/
-    .submain>div:nth-child(2){
-      background-color: skyblue;
-      display: grid;
-      text-align: center;
-      align-items: center;
-      /*grid-template-rows: repeat(4, 90px);*/
-      }
-    }
-
     /*Tablet design*/
     @media screen and ((min-width: 480px) and (max-width: 799px)){
 
     .main{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      /*grid-template-rows: repeat(6, 150px);*/s
       font-size: 1.25em;
       grid-gap: 2em;
       margin: auto;}
@@ -84,7 +86,8 @@
       background-color: lightseagreen;
       display: grid;
       justify-content: center;
-      align-items: center;}
+      align-items: center;
+      grid-template-rows: 2em;}
 
      /*Quote*/
     .submain>div:nth-child(2){
@@ -92,8 +95,7 @@
       display: grid;
       text-align: center;
       align-items: center;
-      grid-template-rows: auto;
-      padding:  15px}
+      padding: 15px}
 
     .spotlight:nth-child(1){
       grid-column: 1 / 3;}
