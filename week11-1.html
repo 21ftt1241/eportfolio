@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week 11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = prompt("Enter your name");
+		var time = parseInt(prompt("Enter time in 24hr (whole number only)"));
+		var num1 = parseInt(prompt("Enter first number:"));
+		var num2 = parseInt(prompt("Enter second number:"));
+		var choice = parseInt(prompt("Enter choice: (1)Addition (2)Multiplication"));
+
+		if(choice == 1){
+			var result = num1 + num2;
+			var operator = "add";
+		}else if(choice == 2){
+			var result = num1 * num2;
+			var operator = "multiply";
+		}
+
+		if(time <= 15){
+			document.write("<p>Good morning: "+ name +"</p>");
+			document.write("<p>You entered "+num1+" & "+num2+"</p>")
+			document.write("<p>You decided to "+operator+" them</p>")
+			document.write("<p>The answer is " + result + "</p>");
+			document.write("Enjoy your morning");
+			
+			
+		}else if(time <=24){
+			document.write("<p>Good day: "+ name +"</p>");
+			document.write("<p>You entered "+num1+" & "+num2+"</p>")
+			document.write("<p>You decided to "+operator+" them</p>")
+			document.write("<p>The answer is " + result + "</p>");
+			document.write("Enjoy the rest of your days");
+		}else{
+			var greetings = "Sorry " + name + ". I need a valid time";
+			document.write(greetings);
+		}
+
+		
+
+		
+	</script>
+</body>
+</html>
