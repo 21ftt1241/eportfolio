@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+	<input type="text" id="name" placeholder="name"><br>
+	<input type="radio" name="gender" value="male" id="male">Male
+	<input type="radio" name="gender" value="female" id="female">Female<br>
+	<input type="checkbox" name="wishlist" value="money">money
+	<input type="checkbox" name="wishlist" value="travel">travel
+	<input type="checkbox" name="wishlist" value="happiness">happines<br>
+	<select name="choice" id="wish">
+		<option value="eternal">eternal life</option>
+		<option value="young">forever young</option>
+		<option value="beauty">eternal beauty</option>
+	</select>
+	<button onclick="getGender()">reveal gender</button>
+	<button onclick="getWish()">reveal wishlist</button>
+	<button onclick="getSelect()">reveal select</button>
+
+	<script type="text/javascript">
+		function getGender(){
+			var male = document.getElementById("male");
+			var female = document.getElementById("female");
+
+			var selectGender = "Your gender is: ";
+
+			if(male.checked){
+				alert(selectGender += "male")
+			}else if(female.checked){
+				alert(selectGender += "female")
+			}else {
+				// alert(selectGender);
+			}
+
+			// using ternary
+			// selectGender == "Your gender is: " ? alert("No gender is selected"):alert(selectGender);
+		};
+
+		function getWish(){
+			var wishlist = document.getElementsByName("wishlist");
+			var wish = "";
+			// if(wishlist[0].checked){
+			// 	wish += wishlist[0].value+" "
+			// }
+			// if(wishlist[1].checked){
+			// 	wish += wishlist[1].value+" "
+			// }
+			// if(wishlist[2].checked){
+			// 	wish += wishlist[2].value+" "
+			// }
+			for (let i = 0; i < wishlist.length; i++){
+				if(wishlist[i].checked){
+					wish += wishlist[i].value+" ";}
+			}
+			alert(wish);
+		}
+
+		function getSelect(){
+			var wish=document.getElementById("wish");
+			// alert(wish.value);
+			alert(wish.options[wish.selectedIndex].value)
+		};
+	</script>
+</body>
+</html>

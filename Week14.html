@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week14</title>
+</head>
+
+<!-- <body id="bg">
+
+	<input type="text" id="textBox" onkeyup="boxColor()">
+
+	using parameter
+	<input type="text" id="textBox" onkeyup="boxColor2(this.value)">
+
+	<script type="text/javascript">
+		function boxColor(){
+			var text = document.getElementById("textBox");
+			var bgColor = document.getElementById("bg");
+			bgColor.style.backgroundColor = text.value;
+		}
+
+		using parameter (this.value)
+		function boxColor2(color){
+			document.body.style.backgroundColor=color;
+		}
+	</script>
+</body> -->
+
+<body>
+	<button onclick="fireUp1()">1</button>
+	<button onclick="fireUp2()">2</button>
+	<button onclick="fireUp3()">3</button>
+
+	<script type="text/javascript">
+		var discount = 10;
+
+		function fireUp1(){
+			discount *= 10;
+			alert("Discount " + discount);
+			alert("Sales " + sales);
+			sales += 1000;
+		}
+
+		function fireUp2(){
+			alert("Name " + name);
+			alert("Sales " + sales);
+			alert("Discount " + discount)
+		}
+
+		function fireUp3(){
+			sales = 100;
+			var name = "ali";
+			alert("name " + name);
+			alert("Sales " + sales);
+		}
+	</script>
+<!--  -->
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week 12-1</title>
+	<style type="text/css">
+		fieldset{
+			text-align: center;
+			margin: auto;
+			width: 50%;
+		}
+		p{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- <input type="text" id="name">
+		<p id="msg"></p>
+		<button onclick="copyToDiv()">Copy to Button</button>
+	<script type="text/javascript">
+		function copyToDiv(){
+			var name = document.getElementById("name");
+			var msg = document.getElementById("msg");
+
+			msg.innerHTML += name.value;
+			name.style.border = "2px solid blue";
+			name.style.fontSize = "1.5em"
+		}
+	</script> -->
+	<form action="/action_page.php">
+		<fieldset>
+			<label>Name: </label><br>
+			<input type="text" id="name" onkeyup="upperCase()" onfocus="resize()" onblur="resize2()"><br>
+			<label>Age: </label><br>
+			<input type="text" id="age"><br>
+			<label for="edu">Your education:</label><br>
+			<select id="edu">
+				<option value="O Level">O Level</option>
+				<option value="A Level">A Level</option>
+			</select><br>
+			<label>Address: </label><br>
+			<textarea id="address" placeholder="Address"></textarea><br>
+			<button onclick="getDetail()">Submit</button>
+		</fieldset>
+	</form>
+	<p id="msg"></p>
+<!-- 	<p id="msgAge"></p>
+	<p id="msgEdu"></p>
+	<p id="msgAddr"></p> -->
+	
+
+	<script type="text/javascript">
+		function getDetail(){
+			var name = document.getElementById("name");
+			var age = document.getElementById("age");
+			var edu = document.getElementById("edu");
+			var address = document.getElementById("address");
+
+			var msg = document.getElementById("msg");
+
+			var content = "Hi " + name.value +"<br>";
+			content += "This year you will be " + age.value + " years old <br>";
+			content += "Your education background is " + edu.value +"<br>";
+			content += "Your address: " + address.value;
+			msg.innerHTML = content;
+		}
+		function upperCase(){
+			var name = document.getElementById("name");
+			name.value = name.value.toUpperCase();
+		}
+		function resize(){
+			var name = document.getElementById("name");
+			name.style.fontSize = "1.5em";
+		}
+		function resize2(){
+			var name = document.getElementById("name");
+			name.style.fontSize = "1em";
+		}
+	</script>
+
+
+	<!-- Output in the div-->
+	<!-- Hi Ahmad -->
+	<!-- This year you will be 19 years old -->
+	<!-- Your edu background -->
+	<!-- Your address -->
+</body>
+</html>
